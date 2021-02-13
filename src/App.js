@@ -20,14 +20,14 @@ function App() {
          setSongs(songs)
       }
 
-      getSongData();
+      getSongData()
    }, [])
    console.log('songs', songs)
    return (
       <div className='App'>
+         <Navbar />
          <div className='container'>
-            <Navbar />
-            <Searchbar songs={songs}/>
+            <Searchbar songs={songs} />
             <LyricLists songs={songs} />
          </div>
       </div>

@@ -17,16 +17,17 @@ export default function Searchbar() {
    return (
       <div className='search'>
          <div className='search-header'>
-            <h3>
+            <h1>
                <i className='fas fa-music'></i> Search for a song.
-            </h3>
+            </h1>
             <p>get lyrics from any track</p>
 
             <Select
                value={selectedOption}
                onChange={handleChange}
                options={options}
-               placeholder='Type...'
+               placeholder='Start Typing...'
+               className='input'
             />
          </div>
       </div>
