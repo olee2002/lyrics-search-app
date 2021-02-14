@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-This project was deployed at [https://lyric-search-by-olee.netlify.app/](https://lyric-search-by-olee.netlify.app/).
+This project is deployed at [https://lyric-search-by-olee.netlify.app/](https://lyric-search-by-olee.netlify.app/).
 
 ## Available Scripts
 
