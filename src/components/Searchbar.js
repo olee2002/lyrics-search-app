@@ -1,18 +1,8 @@
-import React, { useState } from 'react'
-import Select from 'react-select'
+import React, { useState, useEffect } from 'react'
 
-const options = [
-   { value: 'chocolate', label: 'Chocolate' },
-   { value: 'strawberry', label: 'Strawberry' },
-   { value: 'vanilla', label: 'Vanilla' },
-]
-export default function Searchbar() {
-
-   const [selectedOption, setSelectedOption] = useState()
-
-   const handleChange = (selectedOption) => {
-      setSelectedOption(selectedOption)
-      console.log(`Option selected:`, selectedOption)
+export default function Searchbar({ songs, search, setSearch }) {
+   const handleChange = (event) => {
+      setSearch(event.target.value)
    }
    return (
       <div className='search'>
@@ -20,12 +10,11 @@ export default function Searchbar() {
             <h1>
                <i className='fas fa-music'></i> Search for a song.
             </h1>
-            <p>get lyrics from any track</p>
+            <p>Get lyrics from any track</p>
 
-            <Select
-               value={selectedOption}
+            <input
+               value={search}
                onChange={handleChange}
-               options={options}
                placeholder='Start Typing...'
                className='input'
             />
