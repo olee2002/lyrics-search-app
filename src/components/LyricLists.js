@@ -6,7 +6,7 @@ import Spinner from './Spinner'
 export default function LyricLists({ songs }) {
    return (
       <div>
-         <h3>Top 10 Tracks</h3>
+         <h2>Top 10 Tracks</h2>
          <div className='card-list'>
             {songs?.length > 0 ? (
                songs.map((song, i) => (

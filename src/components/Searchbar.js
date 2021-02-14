@@ -15,7 +15,7 @@ export default function Searchbar({ songs, search, setSearch }) {
             <input
                value={search}
                onChange={handleChange}
-               placeholder='Start Typing...'
+               placeholder='Search songs...'
                className='input'
             />
          </div>
